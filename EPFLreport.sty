@@ -172,7 +172,7 @@ I have the utmost admiral, for sharing his research and deep knowledge of
 the field with me. I would also like to thank Prof. Dr. sc. ETH Mathias Payer
 for his Software Security class at EPFL which has been of tremendous help
 for my improvement in the field.
-This report was written using  \href{https://github.com/HexHive/thesis_template}{HexHive Thesis Template.}
+This report was written using  \href{https://github.com/HexHive/thesis_template}{HexHive thesis template.}
 }
 \newcommand{\acknowledgments}[1]{
   \def\@acknowledgments{#1}
@@ -181,9 +181,7 @@ This report was written using  \href{https://github.com/HexHive/thesis_template}
 \def\makeacks{\par
 % Achnowledgments
 \cleardoublepage
-\chapter*{Acknowledgments}
-\markboth{Acknowledgments}{Acknowledgments}
-\addcontentsline{toc}{chapter}{Acknowledgments}
+\section*{Acknowledgments}
 
 \@acknowledgments
 
@@ -191,13 +189,9 @@ This report was written using  \href{https://github.com/HexHive/thesis_template}
 
 \noindent\textit{Lausanne, \today}
 \hfill \@author
+\newpage
 }
 
-\def\abstract{\cleardoublepage
-\chapter*{Abstract}
-\markboth{Abstract}{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}}
-\def\endabstract{}
 
 \def\frenchabstract{\begin{otherlanguage}{french}
 \cleardoublepage
@@ -205,10 +199,12 @@ This report was written using  \href{https://github.com/HexHive/thesis_template}
 \markboth{Résumé}{Résumé}}
 \def\endfrenchabstract{\end{otherlanguage}}
 
+
 \def\maketoc{
 \cleardoublepage
 \pdfbookmark{\contentsname}{toc}
 \tableofcontents
+\newpage
 \setlength{\parskip}{1em}
 }
 

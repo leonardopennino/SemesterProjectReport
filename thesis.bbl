@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{TEEzz}{inproceedings}{}
+    \entry{TEEzz}{proceedings}{}
       \name{author}{6}{}{%
         {{hash=658f71ea9a846b19520e2ccee0fd52ae}{%
            family={Busch},
@@ -63,7 +63,57 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{TEEzz - Fuzzing Trusted Applications on COTS Android Devices.}
+      \field{venue}{Oakland'23: IEEE International Symposium on Security and Privacy, 2023}
       \field{year}{2023}
+    \endentry
+    \entry{Harrison2020PARTEMUED}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=e8c32a428244daba919a10eb36879a72}{%
+           family={Harrison},
+           familyi={H\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+        {{hash=eafc709aef70648f169eaa3ebe90809c}{%
+           family={Vijayakumar},
+           familyi={V\bibinitperiod},
+           given={Hayawardh},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ec4fe77215415a7eebad6c02e9a66842}{%
+           family={Padhye},
+           familyi={P\bibinitperiod},
+           given={Rohan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6dec3318a42d8d397a59554c48b43851}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Koushik},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1ad086068d5b2319c5002af497dd456f}{%
+           family={Grace},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c24317f9bf05e98b207ca5fbe61323e5}
+      \strng{fullhash}{9a3ae65688cb50044df5779c518c7903}
+      \strng{bibnamehash}{9a3ae65688cb50044df5779c518c7903}
+      \strng{authorbibnamehash}{9a3ae65688cb50044df5779c518c7903}
+      \strng{authornamehash}{c24317f9bf05e98b207ca5fbe61323e5}
+      \strng{authorfullhash}{9a3ae65688cb50044df5779c518c7903}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{USENIX Security Symposium}
+      \field{title}{PARTEMU: Enabling Dynamic Analysis of Real-World TrustZone Software Using Emulation}
+      \field{year}{2020}
+    \endentry
+    \entry{HuaweiTrustedCore}{misc}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{ https://github.com/OpenKirin/android_kernel_huawei_hi3650/tree/7.x/drivers/hisi/tzdriver }}
+      \field{title}{Huawei Trusted Core Kernel Driver}
     \endentry
   \enddatalist
 \endrefsection

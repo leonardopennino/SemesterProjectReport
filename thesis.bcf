@@ -2348,7 +2348,12 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">TEEzz</bcf:citekey>
-    <bcf:citekey order="2">TEEzz</bcf:citekey>
+    <bcf:citekey order="2">HuaweiTrustedCore</bcf:citekey>
+    <bcf:citekey order="3">Harrison2020PARTEMUED</bcf:citekey>
+    <bcf:citekey order="4">HuaweiTrustedCore</bcf:citekey>
+    <bcf:citekey order="5">TEEzz</bcf:citekey>
+    <bcf:citekey order="6">HuaweiTrustedCore</bcf:citekey>
+    <bcf:citekey order="7">Harrison2020PARTEMUED</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
