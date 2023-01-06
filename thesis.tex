@@ -190,7 +190,7 @@ run it via \emph{app\textunderscore process}. An example driver that uses Java R
 drawbacks of
 the one discussed before, however not every Client Application has a Java
 callable interface, hence why this approach cannot be used in all scenarios. Furthermore, we are only able to call functions exported from the Java interface, which means that there might be functions of the TAs that we are not covering.
-\begin{lstlisting}[label= {lst:keystoreCAjava}, language=Java, caption=Example driver for Keystore]
+\begin{lstlisting}[label= {lst:keystoreCAjava}, language=Java, caption=Example driver for Keystore using Java Reflection]
 public KeystoreClient() {
       Class IKeystoreService = Class.forName(
       "android.security.IKeystoreService");
@@ -214,9 +214,11 @@ which is used for payments, is one such example. We have to build a driver able 
 build such a driver, first we have to reverse engineer the library to
 understand its functionalities, the functions and objects it exports, the value dependencies and the required structs and parameters. Once we have that sorted, we create a handle to the \emph{shared object} and
 attach it using \emph{dlopen}. Listing~\ref{lst:MlipayCA} contains example code of such a driver.
-We have managed to write a driver for one of MLIPAY's functions by calculating the offset in the Virtual Table and manually jumping at that address. An example is provided in \autoref{lst:MlipayCA}. 
-However, the development of C++ drivers
-\begin{lstlisting}[language=C++, label={lst:MlipayCA}, caption= Example driver for mlipay]
+We have managed to write a driver for one of MLIPAY's functions by calculating the offset in the Virtual Table and manually jumping at that address.
+An example is provided in \autoref{lst:MlipayCA}.
+The manual offset jump calculation can be automated if we reverse engineer the object struct, construct it in memory with the exact sizes and paddings and then use its function pointers to jump..
+However, the development of drivers for C++ binaries requires a lot of manual effort. Furthermore, reversing C++ binaries is always a challenge due to how they are compiled. In addition, hooking into C++ object is also more difficult than C objects as it requires to find a way to call the constructor and get a reference to the object, and also figuring out the object layout in memory to jump into the correct code regions.
+\begin{lstlisting}[language=C++, label={lst:MlipayCA}, caption= Example driver for mlipay using dlopen]
 int main(int argc, char **argv) {
   void *handle = dlopen("libmlipay.so", RTLD_NOW | RTLD_GLOBAL);
   if (handle == NULL) {
