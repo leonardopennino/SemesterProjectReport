@@ -1,0 +1,30 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Acknowledgments}{2}{chapter*.1}%
+\contentsline {chapter}{Abstract}{3}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
+\contentsline {paragraph}{TEEzz-CAID}{5}{section*.4}%
+\contentsline {paragraph}{Writing drivers for closed sourced client applications}{5}{section*.5}%
+\contentsline {paragraph}{Writing drivers using Java Reflection}{5}{section*.6}%
+\contentsline {paragraph}{Seed Recording}{5}{section*.7}%
+\contentsline {paragraph}{Resources}{6}{section*.8}%
+\contentsline {chapter}{\numberline {2}Background}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Library Identification}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Downloading binaries}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Disassembling}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Finding Dependencies}{9}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Triggering interactions with the TA: Drivers}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Manual Interaction}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Interactions using Java Reflection}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Interaction with custom C/C++ drivers}{12}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Seed Recording}{14}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Interceptor}{14}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Gendumper}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.3}FridaDumper}{15}{section.5.3}%
+\contentsline {section}{\numberline {5.4}HalDumper}{15}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Dual Recorder}{15}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Challenges}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}On writing handles for C++ libraries}{17}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Understanding Android Stub and HIDL Java}{17}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Automatic code download from Google Code Source and HIDL Generation}{17}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusion}{19}{chapter.7}%
+\contentsline {chapter}{Bibliography}{20}{section*.9}%
